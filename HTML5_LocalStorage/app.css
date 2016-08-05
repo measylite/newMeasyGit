@@ -1,0 +1,13 @@
+/* Demo Local Storage HTML 5 */
+
+body {
+	background-color: lightgray;
+}
+
+#form1 {
+	/* float:left; */
+	padding: 65px;
+	/* border: 1px solid #cccccc; */
+}
+
+#data > div { padding: 5px; border-bottom: 1px solid #cccccc; }
