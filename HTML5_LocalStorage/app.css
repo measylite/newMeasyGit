@@ -4,10 +4,21 @@ body {
 	background-color: lightgray;
 }
 
-#form1 {
-	/* float:left; */
-	padding: 65px;
-	/* border: 1px solid #cccccc; */
+#note > p {
+	font-size: xx-large;
+	font-style: italic;
 }
 
-#data > div { padding: 5px; border-bottom: 1px solid #cccccc; }
+#form1 {
+	float:left;
+	padding: 10px;
+	border: 1px solid white;
+}
+
+#msg {
+	alignment: left;
+	color: green;
+	font-size: large;
+}
+
+#data > div { padding: 10px; border: 1px solid white; alignment: left;}

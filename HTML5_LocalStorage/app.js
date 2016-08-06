@@ -5,24 +5,34 @@
 */
 function measyInit() 
 {
-// save and retieve btn
+// Buttons
 var saveBtn = document.getElementById('save');
 var retrieveBtn = document.getElementById('retrieve');
 var reviewBtn = document.getElementById('review');
 var deleteBtn = document.getElementById('delete');
 var clearBtn = document.getElementById('clear');
 
-// add event listner for each btn
+/* Add Event Listener for each btn */ 
 saveBtn.addEventListener('click', saveItem);
 retrieveBtn.addEventListener('click', retrieveItem);
 reviewBtn.addEventListener('click', reviewItem);
 deleteBtn.addEventListener('click', deleteItem);
 clearBtn.addEventListener('click',clearAll);
 
-// event listner to update the page of and changes to on other windows
-addEventListener('storage', reviewItem);
+/*
+* Add Event Listener to update the page of any changes to any other windows
+* Swap below listenter to display more detailed informtion see func reviewStorage
+*/ 
+addEventListener('storage', reviewStorage);
+// addEventListener('storage', reviewItem);
 
 }
+
+function reviewStorage(e) {
+ data.innerHTML += '<div>' + 'key: ' + e.key + '<br>' + 'Old Value: ' + 
+ e.oldValue + '<br>' + 'New Value: ' + e.newValue + '<br>' + 'url: ' +
+ e.url + '<br>' + 'Storage Area: ' + e.storageArea + '<br></div>';
+  }
 
 function saveItem() {
 	// get key val
