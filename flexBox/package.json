@@ -1,0 +1,22 @@
+{
+  "name": "demoflexbox",
+  "version": "1.0.0",
+  "description": "flexbox, foundation, modernizer and jquery.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/measylite/newMeasyGit.git"
+  },
+  "author": "measylite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/measylite/newMeasyGit/issues"
+  },
+  "homepage": "https://github.com/measylite/newMeasyGit#readme",
+  "dependencies": {
+    "modernizr": "^3.3.1"
+  }
+}

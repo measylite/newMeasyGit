@@ -1,0 +1,40 @@
+/* Demo Local Storage HTML 5 */
+
+html, body {
+	height: 100%;
+	/* background-color: lightgray; */
+}
+
+/* Flex box */
+ul#flex-container {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row-reverse; /* column, column-reverse, row-reverse, row = default, */
+	flex-wrap: wrap; /*willl wrap based off our 100px width: wrap-reverse, */
+	/*justify-content: space-around;*/ /*space-between, flex-start, flex-end, center, space-between*/
+	height: 300px;
+	align-items: baseline; /*stretch*/
+}
+
+ul > li {
+	/* flex-grow: 1; spread across screen */
+	width: 100px;
+	height: 150px;
+	padding-top: 65px;
+	color: blue;
+	font-size: 2.6em;
+	text-align: center;
+}
+
+ul li:first-child { background:  purple; /*order: 6;*/}
+ul li:nth-child(2) { background: yellow; }
+ul li:nth-child(3) { background: lightblue; align-self: flex-end; /* flex-grow: 5; */}
+ul li:nth-child(4) { background: green; /* order: 2; */}
+ul li:nth-child(5) { background: orange; /* flex-grow: 3; */ }
+ul li:last-child { background: red; }
+
+
+/* Flexbox Direction Horizontal or Vericle */
+
